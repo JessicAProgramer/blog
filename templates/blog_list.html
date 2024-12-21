@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-3">
+            <h1 class="text text-center">blogs</h1>
+            {% for post in posts %}
+
+                <div class="card fondo my-4">
+                    <h2 class="title">{{post.title}}</h2>
+                    <a href="{% url 'blog:detail' post.id %}" class="read">Leer Mas</a>
+                </div>
+
+
+            {% endfor %}
+            <a href="{% url 'blog:create' %}" class="btn btn-primary escala link">Create a Blog</a>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

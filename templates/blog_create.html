@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 my-4">
+                <form method="POST" class="card card-body ">
+                    <h2 class="text-center">Create a Blog</h2>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="write a title" name="title">
+                    <div class="mb-3">
+                    <label for="content" class="form-label">Content</label>
+                    <input type="text" class="form-control" id="content" placeholder="write a content" name="content">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-secondary">
+                        Submit
+                    </button>
+            
+            </form>
+            </div>
+        </div>
+</main>
+{% endblock %}

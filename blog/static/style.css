@@ -1,0 +1,28 @@
+body{
+   background-color: azure;
+}
+
+.nav{
+    background-color: blueviolet;
+}
+.bar, .title{
+    color:  azure;
+}
+.fondo{
+    background-color: gray;
+}
+.read{
+    color: azure;
+}
+.read:hover{
+    color: aqua;
+}
+.link:hover{
+    background-color: gray;
+}
+.bar:hover{
+    color: azure;
+}
+.text{
+    color: blueviolet;
+}
